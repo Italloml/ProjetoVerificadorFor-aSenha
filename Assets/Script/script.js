@@ -20,8 +20,8 @@ passwordInput.addEventListener('input', function() { // criando o evento
 
     // Avaliação no que está preenchido para ser somada ao score
 
-    // primeiro requisitos
-    if(password.length >= 8) score++;
+    // requisitos
+    if(password.length >= 8) score++; 
     if(password.match(/[a-z]/)) score++; // verificando se há letra minúscula
     if(password.match(/[A-Z]/)) score++; // verificando se há letra maiúscula
     if(password.match(/[0-9]/)) score++; // verificando se há número
@@ -57,3 +57,4 @@ passwordInput.addEventListener('input', function() { // criando o evento
         strengthText.innerHTML = "";
     }
 });
+
